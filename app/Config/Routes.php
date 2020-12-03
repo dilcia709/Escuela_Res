@@ -37,16 +37,30 @@ $routes->group('api', ['namespace' => 'App\Controllers\API'], function($routes){
 	$routes->get('profesores/edit/(:num)', 'Profesores::edit/$1');
 	$routes->put('profesores/update/(:num)', 'Profesores::update/$1');
 	$routes->delete('profesores/delete/(:num)', 'Profesores::delete/$1');
+
 	$routes->get('grados', 'Grados::index');
 	$routes->post('grados/create', 'Grados::create');
 	$routes->get('grados/edit/(:num)', 'Grados::edit/$1');
 	$routes->put('grados/update/(:num)', 'Grados::update/$1');
 	$routes->delete('grados/delete/(:num)', 'Grados::delete/$1');
+
 	$routes->get('estudiantes', 'Estudiantes::index');
 	$routes->post('estudiantes/create', 'Estudiantes::create');
 	$routes->get('estudiantes/edit/(:num)', 'Estudiantes::edit/$1');
 	$routes->put('estudiantes/update/(:num)', 'Estudiantes::update/$1');
 	$routes->delete('estudiantes/delete/(:num)', 'Estudiantes::delete/$1');
+
+	$routes->get('roles', 'Roles::index');
+	$routes->post('roles/create', 'Roles::create');
+	$routes->get('roles/edit/(:num)', 'Roles::edit/$1');
+	$routes->put('roles/update/(:num)', 'Roles::update/$1');
+	$routes->delete('roles/delete/(:num)', 'Roles::delete/$1');
+
+	$routes->get('usuarios', 'Usuarios::index');
+	$routes->post('usuarios/create', 'Usuarios::create');
+	$routes->get('usuarios/edit/(:num)', 'Usuarios::edit/$1');
+	$routes->put('usuarios/update/(:num)', 'Usuarios::update/$1');
+	$routes->delete('usuariosdelete/(:num)', 'Usuarios::delete/$1');
 
 	
 
